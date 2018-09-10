@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Perfil">
+        <menu>
+            <item
+                android:id="@+id/nav_ir_perfil"
+                android:icon="@drawable/account"
+                android:title="Perfil" />
+            <item
+                android:id="@+id/nav_editar_senha"
+                android:icon="@drawable/account_key"
+                android:title="Editar Senha" />
+            <item
+                android:id="@+id/nav_apagar_conta"
+                android:checkable="false"
+                android:icon="@drawable/account_off"
+                android:title="Apagar Conta" />
+        </menu>
+    </item>
+
+    <item android:title="Outros">
+        <menu>
+            <item
+                android:id="@+id/nav_sobre"
+                android:icon="@drawable/ic_information"
+                android:title="Sobre" />
+            <item
+                android:id="@+id/nav_sair"
+                android:icon="@drawable/exit_to_app"
+                android:title="Sair" />
+        </menu>
+    </item>
+
+</menu>

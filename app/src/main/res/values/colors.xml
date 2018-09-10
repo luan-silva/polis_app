@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimaryLigth">#ae6bd5</color>
+    <color name="colorPrimary">#7c3da3</color>
+    <color name="colorPrimaryDark">#4c0d74</color>
+    <color name="colorPrimaryHyperDark">#1a237e</color>
+    <color name="colorAccent">#ae6bd5</color>
+    <color name="colorNoActived">#bdbdbd</color>
+    <color name="colorGrayMedium">#616161</color>
+    <color name="colorRed500">#d50000</color>
+    <color name="colorGreen">#009688</color>
+    <color name="colorBlueGray">#607D8B</color>
+    <color name="PolisAzul">#e64a19</color>
+    <color name="PolisAlternative">#e64a19</color>
+    <color name="colorGrayLight">#d4d4d4</color>
+
+
+</resources>

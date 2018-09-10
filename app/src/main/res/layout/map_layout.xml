@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.erison.mapateste4.MapsLayout">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.gms.maps.MapView
+            android:id="@+id/map"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/MapChangeTypeButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/MapOptions"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentStart="false"
+            android:layout_alignWithParentIfMissing="false"
+            android:layout_marginBottom="16dp"
+            android:layout_marginRight="16dp"
+            android:clickable="true"
+            android:tint="@color/colorGrayMedium"
+            map:backgroundTint="@color/cardview_light_background"
+            map:fabSize="mini"
+            map:srcCompat="@drawable/ic_satellite_white_24dp" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/MapOptions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/AddNewMarker"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="false"
+            android:layout_marginRight="16dp"
+            android:clickable="true"
+            android:tint="@color/colorGrayMedium"
+            map:backgroundTint="@color/cardview_light_background"
+            map:fabSize="mini"
+            map:srcCompat="@drawable/filter" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/AddNewMarker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="16dp"
+            android:clickable="true"
+            map:backgroundTint="@color/colorPrimaryLigth"
+            map:fabSize="normal"
+            map:srcCompat="@drawable/map_marker_plus" />
+
+    </RelativeLayout>
+
+</LinearLayout>

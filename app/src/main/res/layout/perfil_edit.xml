@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+        <ImageView
+            android:id="@+id/CapaEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/background_city" />
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="false"
+            android:layout_centerVertical="false"
+            android:layout_marginBottom="10dp"
+            app:cardCornerRadius="60dp"
+            app:cardElevation="5dp">
+
+            <ImageView
+                android:id="@+id/FotoEdit"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="10dp"
+                android:adjustViewBounds="true"
+                android:background="@android:color/white"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/cast_album_art_placeholder" />
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/editarCapa"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="6dp"
+            android:clickable="true"
+            android:tint="@android:color/white"
+            app:backgroundTint="@color/colorPrimary"
+            app:fabSize="mini"
+            app:srcCompat="@drawable/image" />
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:alpha="0.6"
+            android:rotation="180"
+            app:srcCompat="@drawable/cast_expanded_controller_bg_gradient_light" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/editarFoto"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="-40dp"
+            android:layout_toEndOf="@+id/cardView"
+            android:layout_toRightOf="@+id/cardView"
+            android:clickable="true"
+            android:tint="@android:color/white"
+            app:backgroundTint="@color/colorPrimary"
+            app:elevation="5dp"
+            app:fabSize="mini"
+            app:srcCompat="@drawable/edit" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:text="Editar Perfil"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentStart="false"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="false"
+            android:layout_centerVertical="false"
+            android:alpha="0.2"
+            app:srcCompat="@drawable/cast_expanded_controller_bg_gradient_light" />
+
+    </RelativeLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_weight="1"
+            android:text="Editar nome:"
+            android:textColor="@color/colorPrimary"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/nomeEditado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:height="1dp"
+            android:backgroundTint="@color/colorNoActived"
+            android:drawableTint="@color/colorPrimary"
+            android:elegantTextHeight="false"
+            android:ems="10"
+            android:foreground="@drawable/back"
+            android:hint="Digite seu nome"
+            android:imeOptions="flagNavigateNext"
+            android:inputType="textPersonName"
+            android:labelFor="@+id/imageView2"
+            android:maxLength="26"
+            android:singleLine="true"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textColorHighlight="@color/colorPrimary"
+            android:textColorHint="@color/colorNoActived"
+            android:textColorLink="@color/colorPrimary"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_weight="1"
+            android:text="Editar descrição:"
+            android:textColor="@color/colorPrimary"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/sobreEditado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:backgroundTint="@color/colorNoActived"
+            android:ems="10"
+            android:hint="Escolha sua descrição"
+            android:imeOptions="actionGo"
+            android:inputType="textMultiLine"
+            android:labelFor="@+id/imageView2"
+            android:maxLength="200"
+            android:maxLines="5"
+            android:singleLine="false"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textColorHighlight="@color/colorPrimary"
+            android:textColorHint="@color/colorNoActived"
+            android:textColorLink="@color/colorPrimary"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/cancelEdit"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="bottom|left"
+            android:layout_margin="16dp"
+            android:background="@drawable/close"
+            android:backgroundTint="@color/colorPrimary" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <ImageButton
+            android:id="@+id/ConfirmEdit"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="bottom"
+            android:layout_margin="16dp"
+            android:background="@drawable/check"
+            android:backgroundTint="@color/colorPrimary" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        app:cardCornerRadius="1dp"
+        app:cardElevation="2dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_margin="16dp"
+                        app:cardCornerRadius="20dp"
+                        app:cardElevation="3dp">
+
+                        <ImageView
+                            android:id="@+id/CardImage"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_column="0"
+                            android:layout_row="0"
+                            android:scaleType="centerCrop" />
+                    </android.support.v7.widget.CardView>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginTop="16dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:baselineAligned="false"
+                            android:clipChildren="false"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/CardDescription1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:allowUndo="false"
+                                android:autoText="false"
+                                android:ellipsize="end"
+                                android:lineSpacingExtra="-2sp"
+                                android:maxLines="2"
+                                android:padding="0dp"
+                                android:text="fsdfs df dwhuhdweuhr gwrgwe jgwejhgr wehjgrjhwgerwe"
+                                android:textColor="@android:color/black"
+                                android:textStyle="bold" />
+
+                            <ImageView
+                                android:id="@+id/posiCardActivated"
+                                android:layout_width="16dp"
+                                android:layout_height="16dp"
+                                android:layout_marginBottom="6dp"
+                                android:layout_marginLeft="4dp"
+                                android:layout_marginRight="4dp"
+                                android:layout_weight="0"
+                                android:adjustViewBounds="false"
+                                android:baselineAlignBottom="false"
+                                android:cropToPadding="false"
+                                android:keepScreenOn="false"
+                                android:tint="@color/colorGrayMedium"
+                                app:srcCompat="@drawable/ic_place_white_24dp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/CardSubDescription"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="false"
+                                android:layout_weight="1"
+                                android:ellipsize="end"
+                                android:minLines="1"
+                                android:padding="0dp"
+                                android:text="TextView"
+                                android:textAlignment="textStart"
+                                android:textSize="10sp" />
+
+                            <TextView
+                                android:id="@+id/cardDate"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="TextView"
+                                android:textAlignment="textEnd"
+                                android:textSize="10sp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/FeedPubText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_weight="1"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:id="@+id/FeedPubImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:maxHeight="350dp"
+                    android:paddingTop="16dp"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/cast_album_art_placeholder_large" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:orientation="horizontal">
+
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/Aprova"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="8dp"
+                    android:clickable="true"
+                    android:tint="@color/colorGrayMedium"
+                    app:backgroundTint="#eaeaea"
+                    app:elevation="0dp"
+                    app:fabSize="mini"
+                    app:srcCompat="@drawable/ic_trending_up_white_24dp" />
+
+                <TextView
+                    android:id="@+id/UpVotes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="false"
+                    android:layout_centerVertical="false"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_toRightOf="@+id/Aprova"
+                    android:elevation="2dp"
+                    android:gravity="center"
+                    android:lineSpacingExtra="-2sp"
+                    android:maxLines="1"
+                    android:padding="0dp"
+                    android:text="30k"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/colorGrayMedium"
+                    android:textSize="10sp"
+                    android:textStyle="bold" />
+
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/downButton"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_toRightOf="@+id/UpVotes"
+                    android:clickable="true"
+                    android:tint="@color/colorGrayMedium"
+                    app:backgroundTint="#eaeaea"
+                    app:elevation="0dp"
+                    app:fabSize="mini"
+                    app:srcCompat="@drawable/ic_trending_down_white_24dp" />
+
+                <TextView
+                    android:id="@+id/DownVotes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="false"
+                    android:layout_centerVertical="false"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_toRightOf="@+id/downButton"
+                    android:elevation="2dp"
+                    android:ellipsize="end"
+                    android:fontFamily="monospace"
+                    android:gravity="center"
+                    android:lineSpacingExtra="-2sp"
+                    android:maxLines="1"
+                    android:padding="0dp"
+                    android:text="1k"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/colorGrayMedium"
+                    android:textSize="10sp"
+                    android:textStyle="bold" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/Neutro"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_alignBottom="@+id/card"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_toRightOf="@+id/DownVotes"
+                    android:clickable="true"
+                    android:tint="@color/colorGrayMedium"
+                    app:backgroundTint="#eaeaea"
+                    app:elevation="0dp"
+                    app:fabSize="mini"
+                    app:srcCompat="@drawable/comment" />
+
+                <TextView
+                    android:id="@+id/Coments"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="false"
+                    android:layout_centerVertical="false"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_toRightOf="@+id/Neutro"
+                    android:elevation="2dp"
+                    android:ellipsize="end"
+                    android:fontFamily="monospace"
+                    android:gravity="center"
+                    android:lineSpacingExtra="-2sp"
+                    android:maxLines="1"
+                    android:padding="0dp"
+                    android:text="14"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/colorGrayMedium"
+                    android:textSize="10sp"
+                    android:textStyle="bold" />
+
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/shareButton"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_alignBottom="@+id/card"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_toRightOf="@+id/Coments"
+                    android:clickable="true"
+                    android:tint="@color/colorGrayMedium"
+                    app:backgroundTint="#eaeaea"
+                    app:elevation="0dp"
+                    app:fabSize="mini"
+                    app:srcCompat="@drawable/share_wait" />
+
+                <TextView
+                    android:id="@+id/Shares"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="false"
+                    android:layout_centerVertical="false"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="4dp"
+                    android:layout_toRightOf="@+id/shareButton"
+                    android:elevation="2dp"
+                    android:ellipsize="end"
+                    android:fontFamily="monospace"
+                    android:gravity="center"
+                    android:lineSpacingExtra="-2sp"
+                    android:maxLines="1"
+                    android:padding="0dp"
+                    android:text="4"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/colorGrayMedium"
+                    android:textSize="10sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

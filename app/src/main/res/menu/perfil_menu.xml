@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/m_foto"
+        android:icon="@drawable/image"
+        android:title="Mudar Foto" />
+    <item
+        android:id="@+id/m_capa"
+        android:icon="@drawable/image"
+        android:title="Mudar Capa" />
+    <item
+        android:id="@+id/m_sobre"
+        android:icon="@drawable/edit_blue"
+        android:title="Editar descrição" />
+    <item
+        android:id="@+id/m_nome"
+        android:icon="@drawable/down"
+        android:title="Mudar Nome" />
+</menu>

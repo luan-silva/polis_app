@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="175dp"
+        android:layout_height="175dp"
+        android:layout_above="@+id/relativeContent"
+        android:layout_centerHorizontal="true"
+        android:adjustViewBounds="false"
+        app:srcCompat="@mipmap/polis_temple" />
+
+    <RelativeLayout
+        android:id="@+id/relativeContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="false"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/usernameTIL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textColorHint="@color/colorPrimaryLigth">
+
+            <EditText
+                android:id="@+id/username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/password"
+                android:layout_centerHorizontal="true"
+                android:layout_weight="1"
+                android:backgroundTint="@color/colorPrimaryLigth"
+                android:cursorVisible="true"
+                android:hint="Email // Username"
+                android:inputType="textEmailAddress"
+                android:maxLength="35"
+                android:maxLines="1"
+                android:textColor="@android:color/white"
+                android:textColorHint="@color/colorPrimaryLigth"
+                android:textColorLink="@android:color/white"
+                android:textSize="20sp" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/passwordTIL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/usernameTIL"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="@android:color/white"
+            android:textColorHint="@color/colorPrimaryLigth"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="@color/colorPrimaryLigth">
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="false"
+                android:backgroundTint="@color/colorPrimaryLigth"
+                android:hint="Senha"
+                android:inputType="textPassword"
+                android:maxLength="35"
+                android:textColor="@android:color/white"
+                android:textColorHint="@color/colorPrimaryLigth"
+                android:textColorLink="@android:color/white"
+                android:textSize="20sp" />
+        </android.support.design.widget.TextInputLayout>
+
+
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/botao_login"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignLeft="@+id/relativeContent"
+        android:layout_alignStart="@+id/relativeContent"
+        android:layout_below="@+id/relativeContent"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="8dp"
+        android:foregroundGravity="center_horizontal"
+        android:text="Entrar"
+        android:textColor="@android:color/white"
+        android:theme="@style/MyButton" />
+
+    <TextView
+        android:id="@+id/cadastro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/botao_login"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Novo usuário? Registre-se"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@android:color/white"
+        android:textColorHighlight="@color/colorPrimaryDark" />
+
+    <TextView
+        android:id="@+id/txt_esqueceu_senha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/botao_login"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:gravity="center_vertical"
+        android:text="Esqueceu a senha?"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@android:color/white"
+        android:textColorLink="@android:color/white"
+        android:textSize="14sp" />
+
+    <RelativeLayout
+        android:id="@+id/progressBar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.9"
+        android:background="@android:color/white"
+        android:clickable="true"
+        android:elevation="7dp"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_alignParentTop="false"
+            android:layout_centerHorizontal="false"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="false"
+            android:indeterminate="true"
+            android:indeterminateTint="@color/colorPrimary"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+</RelativeLayout>

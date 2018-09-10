@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    app:layout_collapseParallaxMultiplier="1.0"
+    tools:context="com.example.erison.mapateste4.recuperar_senha">
+
+    <TextView
+        android:id="@+id/txt_recupera_senha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Digite o seu email para recuperar usuário e senha"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toTopOf="@+id/txt_inputlayout_recuperar_email" />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/txt_inputlayout_recuperar_email"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="5dp"
+        app:errorEnabled="true">
+
+        <EditText
+            android:id="@+id/recuperarEmail"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_above="@+id/botaoEnviar"
+            android:layout_alignLeft="@+id/botaoEnviar"
+            android:layout_alignStart="@+id/botaoEnviar"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/colorPrimaryLigth"
+            android:ems="10"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:maxLength="35"
+            android:textColor="@android:color/white"
+            android:textColorHighlight="@android:color/white"
+            android:textColorHint="@color/colorPrimaryLigth"
+            android:textSize="20sp" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/botaoEnviar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_weight="1"
+            android:text="Enviar"
+            android:textColor="@android:color/white"
+            android:theme="@style/MyButton"
+            app:layout_constraintTop_toBottomOf="@+id/txt_inputlayout_recuperar_email" />
+
+        <Button
+            android:id="@+id/btn_cancelar_rec"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="CANCELAR"
+            android:textColor="@android:color/white"
+            android:theme="@style/MyButton" />
+
+    </LinearLayout>
+
+</LinearLayout>
+
